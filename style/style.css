@@ -1,0 +1,368 @@
+
+
+.sticky-nav ul{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    height: 75px;
+    padding: 15px 0;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    transition: .3s padding linear, .3s background linear;
+}
+
+.sticky-nav.active ul{
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    /* po zmianach pozycji absolutnej w sticki ikonach cos nie działa ten filt */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0;
+}
+
+.sticky-nav li{
+    list-style: none;
+    font-size: 2.4em;
+    font-weight: 700;
+    padding: .5em 1em;
+    color: rgba(0, 0, 0, .8);
+    margin-right: 1em;
+    border-radius: 2em;
+    transition: .3s padding linear, .3s background linear;
+
+}
+
+/* .sticky-nav.active li:hover{
+    background: none;
+} */
+.sticky-nav li:hover{
+    color: rgb(128, 174, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: .5em 1em;
+    border-radius: 2em;
+}
+.hero-image{
+    background-image: url('../img/hero-img.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-image h1{
+    color: rgba(0, 0, 0, .9)
+}
+
+.first-section{
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+.first-section .desc{
+    padding: 0 2em;
+    width: calc(50% - 4em);
+}
+
+.first-section .desc img{
+    width: 100px;
+    height: 100px;
+    padding: 0 20px 10px 0;
+    float: left;    
+}
+.first-section .desc p{
+    text-align: justify;
+}
+
+.icon-text{
+    display: block;
+    margin-bottom: 40px;
+}
+
+/* .first-section .icons{
+    width: 50%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    position:sticky;
+    top: 100px;
+
+}
+
+.first-section .icons img{
+    width: 100px;
+    height: 100px;
+} */
+
+.progres-bars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position:sticky;
+    top: 100px;
+    width: 50%;
+}
+
+
+.progres-bar{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.progres-bar__icon{
+    width: 20%;
+}
+
+.progres-bar__bar{
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(248, 175, 35, .7);
+    border-radius: 5px;
+    width: 70%;
+    height: 10px;
+    position: relative;
+}
+
+.active .progres-bar__bar::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(248, 175, 35, .7);
+    z-index: 1;
+}
+
+.html .progres-bar__bar::after{
+    animation: 2s html-bar ease-out;
+    animation-fill-mode: forwards;
+}
+
+.css .progres-bar__bar::after{
+    animation: 2s css-bar ease-out;
+    animation-fill-mode: forwards;
+}
+
+.js .progres-bar__bar::after{
+    animation: 2s js-bar ease-out;
+    animation-fill-mode: forwards;
+}
+
+.php .progres-bar__bar::after{
+    animation: 2s php-bar ease-out;
+    animation-fill-mode: forwards;
+}
+
+.sql .progres-bar__bar::after{
+    animation: 2s sql-bar ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes html-bar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 82%;
+    }
+}
+
+@keyframes css-bar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes js-bar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes php-bar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 32%;
+    }
+}
+
+@keyframes sql-bar{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
+
+.owl-item img{
+    max-height: 100px;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.owl-item img:hover{
+    transition: .4s filter ease-out;
+    filter: none;
+}
+
+.carousel{
+    margin: 200px 0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .7);
+}
+
+.footer__links{
+    font-size: 5px;
+}
+
+.footer__links:hover{
+    font-size: 5px;
+    color: #000;
+    transition: 0.4s color ease-out;
+}
+
+.footer__social img{
+    width: 30px;
+    height: 30px;
+    margin: 50px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.footer__social img:hover{
+    transition: .4s opacity ease-out;
+    opacity: 1;
+}
+
+
+
+
+.content{
+    height: 300vh;
+}
+
+.page-up img{
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 964px){
+    
+    .mobile-menu a::after, .mobile-menu a::before, .mobile-menu a{
+        display: list-item !important;
+    }
+
+    .desktop-menu{
+        display: none;
+    }
+
+    .first-section .desc{
+        width: 90%;
+        margin: auto;
+    }
+
+    .progres-bars{
+        width: 90%;
+
+    }
+
+
+}
+
+.mobile-menu{
+    width: 50px;
+    padding: 27px;
+    background: none !important;
+    
+}
+
+.mobile-menu a::after, .mobile-menu a::before, .mobile-menu a{
+    content: "";
+    display: none;
+    border: 2px solid rgba(0, 0, 0, 1);
+    width: 50px;
+    right: 50px;
+    position: fixed;
+    transition: .4s all ease-out;
+
+
+}
+.mobile-menu a::after{
+    transform: translateY(-15px);
+}
+
+.mobile-menu a::before{
+    transform: translateY(10px);
+}
+
+.mobile-menu:hover a::after, .mobile-menu:hover a::before{
+    transform: translateY(0);
+    background: none;
+}
+
+.mobile-menu:hover a{
+    border-color: rgba(0, 0, 0, 0);
+}
+.mobile-menu:hover a::after{
+    transform:  rotate(315deg);
+}
+.mobile-menu:hover a::before{
+    transform:  rotate(225deg);
+}
+
+/* section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+}
+
+.sal-1{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sal-1 h1{
+    text-align: center;
+}
+
+.sal-2 .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sal-2 img{
+    padding: 0 5em;
+    box-sizing: border-box;
+} */
