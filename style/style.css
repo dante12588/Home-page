@@ -28,10 +28,10 @@ body{
     font-size: 2.4em;
     font-weight: 700;
     padding: .5em 1em;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, .85);
     margin-right: 1em;
     border-radius: 2em;
-    transition: .3s padding linear, .3s background linear;
+    transition: .3s padding linear, .3s background linear, .2s color linear;
 
 }
 
@@ -45,8 +45,11 @@ body{
     border-radius: 2em;
 }
 .hero-image{
-    background-image: url('../img/hero-img.jpg');
+    background-image: url('../img/hero-2.jpg');
+    background-color: rgba(0, 0, 0, .55);
+    background-blend-mode: overlay;
     min-height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +57,7 @@ body{
 }
 
 .hero-image h1{
-    color: rgba(0, 0, 0, .9)
+    color: rgba(255, 255, 255, .85)
 }
 
 .first-section{
@@ -348,9 +351,9 @@ body{
         margin: 15px;
     }
 
-    .hero-image{
-        background-position: top right;
-    }
+    /* .hero-image{
+        background-position: right center;
+    } */
 
 }
 
@@ -365,12 +368,11 @@ body{
 .mobile-menu a::after, .mobile-menu a::before, .mobile-menu a{
     content: "";
     display: none;
-    border-top: 4px solid rgba(0, 0, 0, 1);
+    border-top: 4px solid rgba(255, 255, 255, .85);
     width: 40px;
     right: 40px;
     position: fixed;
     transition: .4s all ease-out;
-
 
 }
 .mobile-menu a::after{
@@ -406,6 +408,10 @@ body{
     z-index: 2;
 
     
+}
+
+.mobile-menu-item a{
+    color: rgba(255, 255, 255, .85) !important;
 }
 
 .mobile-menu-items.active{
