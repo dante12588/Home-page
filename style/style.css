@@ -1,5 +1,7 @@
 
-
+body{
+    overflow-X: hidden;
+}
 .sticky-nav ul{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
@@ -122,7 +124,7 @@
 
 .progres-bar__bar{
     background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(248, 175, 35, .7);
+    /* border: 1px solid rgba(248, 175, 35, .7); */
     border-radius: 5px;
     width: 70%;
     height: 10px;
@@ -224,6 +226,15 @@
     filter: none;
 }
 
+.owl-nav button{
+    width: 10%;
+    height: 10%;
+}
+
+.owl-nav button span{
+    font-size: 4em;
+}
+
 .carousel{
     margin: 200px 0;
 }
@@ -238,6 +249,7 @@
 
 .footer__links{
     font-size: 5px;
+    padding: 4em;
 }
 
 .footer__links:hover{
@@ -259,16 +271,19 @@
     opacity: 1;
 }
 
-
-
-
 .content{
     height: 300vh;
 }
 
+.carousel__heading{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
 .page-up img{
-    width: 75px;
-    height: 75px;
+    width: 45px;
+    height: 45px;
     position: fixed;
     bottom: 25px;
     right: 25px;
@@ -286,32 +301,63 @@
     }
 
     .first-section .desc{
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
+    .first-section .desc h3{
+        font-size: 3em;
+        text-align: justify;
+    }
+
+    .icon-text p{
+        font-size: 2.2em;
+    }
+
     .progres-bars{
-        width: 70%;
-        margin: auto;
+        width: 100%;
+        margin: 0 auto;
 
     }
 
     .progres-bar__bar{
-        width: 60% !important; 
+        width: 70% !important; 
     }
+    .progres-bar__icon {
+        width: 15% !important; 
+    }
+    
 
     .hero-image h1{
-        font-size: 3em;
+        font-size: 4.5em;
+        padding: 10px;
         font-weight: 700;
+        text-align: center;
     }
 
+    .carousel{
+        margin: 50px 0;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer__social img{
+        margin: 15px;
+    }
+
+    .hero-image{
+        background-position: top right;
+    }
 
 }
 
 .mobile-menu{
     width: 50px;
-    padding: 27px;
+    padding: 50px;
     background: none !important;
+    cursor: pointer;
     
 }
 
@@ -319,8 +365,8 @@
     content: "";
     display: none;
     border-top: 4px solid rgba(0, 0, 0, 1);
-    width: 50px;
-    right: 50px;
+    width: 40px;
+    right: 40px;
     position: fixed;
     transition: .4s all ease-out;
 
