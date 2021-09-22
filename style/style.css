@@ -1,6 +1,6 @@
 
 body{
-    overflow-X: hidden;
+    overflow-X: hidden !important;
 }
 .sticky-nav ul{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -278,6 +278,7 @@ body{
 .carousel__heading{
     text-align: center;
     font-size: 3em;
+    padding: 1em;
     margin-bottom: 2em;
 }
 
@@ -469,34 +470,3 @@ body{
 .mobile-menu-item.active{
     animation: 1s mobile-items-opacity ease-out;
 }
-
-
-
-
-/* section{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.container{
-    width: 100%;
-}
-
-.sal-1{
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.sal-1 h1{
-    text-align: center;
-}
-
-.sal-2 .container{
-    display: flex;
-    justify-content: space-around;
-}
-
-.sal-2 img{
-    padding: 0 5em;
-    box-sizing: border-box;
-} */
