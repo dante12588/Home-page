@@ -73,3 +73,9 @@ $(window).scroll(function () {
     }
 
 });
+
+$('.mobile-menu').click( function(){
+    $('.mobile-menu').toggleClass('active');
+    $('.mobile-menu-items').toggleClass('active');
+    $('.mobile-menu-item').toggleClass('active');
+});
