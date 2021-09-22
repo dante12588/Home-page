@@ -1,0 +1,97 @@
+.hero-anim-shape{
+    content: url('../svg/animation/bleach.svg');
+    position: absolute;
+    width: 40px;
+    opacity: .6;
+}
+
+.shape-1{
+    bottom: 70px;
+    left: 48px;
+    animation: 5s shake3 ease-in-out;
+    animation-iteration-count: infinite;
+
+    
+}
+
+.shape-2{
+    bottom: 70px;
+    left: 80px;
+    transform: rotate(180deg);
+    animation: 5s shake2 ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+.shape-3{
+    bottom: 110px;
+    left: 80px;
+    animation: 3s shake ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+.shape-4{
+    bottom: 120px;
+    left: 115px;
+    animation: 80s move-x ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes move-x{
+    0%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: translateX(50vw) rotate(46deg);
+    }
+    100%{
+        transform: translateX(-5px) rotate(-60deg);
+    }
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    40%{
+        transform: translateX(2px) translateY(2px);
+    }
+    80%{
+        transform: translateX(2px) translateY(2px);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+    }
+}
+
+@keyframes shake2{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(60deg);
+    }
+    40%{
+        transform: translateX(-2px) translateY(-2px) rotate(60deg);
+    }
+    80%{
+        transform: translateX(-2px) translateY(-2px) rotate(60deg);
+    }
+    100%{
+        transform: translateX(0px) translateY(0px) rotate(60deg);
+    }
+}
+
+@keyframes shake3{
+    0%{
+        transform: translateX(-5px) translateY(0px);
+    }
+    40%{
+        transform: translateX(-20px) translateY(-2px);
+    }
+    80%{
+        transform: translateX(-2px) translateY(-2px);
+    }
+    100%{
+        transform: translateX(-5px) translateY(0px);
+    }
+}
