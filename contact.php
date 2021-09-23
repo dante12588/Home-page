@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/typo.css">
     <link rel="stylesheet" href="style/hero-anim.css">
+    <link rel="stylesheet" href="style/contact.css">
 
 </head>
 <body>
@@ -73,38 +74,28 @@
             }
         ?>
 
-        <form action="" method="post">
-            Imię: <input type="text" name="first_name"><br>
-            Nazwisko: <input type="text" name="last_name"><br>
-            Tytuł: <input type="text" name="subject"><br>
-            Mail: <input type="text" name="email"><br>
-            Wiadomoś:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-            <input type="submit" name="submit" value="Wyślij">
-        </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
+        <div class="wrapper contact-wrapper">
+            <span class="contact-frame-top"></span>
+            <span class="contact-frame-dots"></span>
+            <form action="" method="post">
+                <div class="dest-msg">
+                    <h2 class="dest-msg__header">Napisz do</br><span class="msg-underline">mnie</span></h2>
+                    <span class="dest-msg__decor"></span>
+                </div>
+                <div class="form-msg">
+                    <span class="name1 input"><input type="text" name="first_name" placeholder="Imię" required></span>
+                    <span class="name2 input"><input type="text" name="last_name" placeholder="Nazwisko" required></span>
+                    <span class="title input"><input type="text" name="subject" placeholder="Tytuł" required></span>
+                    <span class="mail input"><input type="text" name="email" placeholder="Adres email" required></span>
+                    <span class="mail input"><textarea rows="5" name="message" placeholder="Wiadomość" cols="30" required></textarea></span>
+                    <input class="submit-btn input" type="submit" name="submit" value="Wyślij">
+                </div>
+            </form>
+        </div>
 
     <div class="page-up">
         <img src="svg/050-up chevron.svg" alt="">
     </div>
-
-
 
     <script src="lib/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
