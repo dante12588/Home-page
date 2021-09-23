@@ -40,40 +40,6 @@ $('.page-up img').click( function(){
     window.scroll({top: 0, behavior: "smooth"})
 } )
 
-
-$(window).scroll(function () {
-    let scroll = $(window).scrollTop();
-    let height = $(window).height();
-    let bottom = (scroll + height) * 0.9;
-
-    let html = $('.html').offset().top;
-    let css = $('.css').offset().top;
-    let js = $('.js').offset().top;
-    let php = $('.php').offset().top;
-    let sql = $('.sql').offset().top;
-
-    if( bottom > html){
-        $('.html').addClass('active');
-    }
-
-    if( bottom > css){
-        $('.css').addClass('active');
-    }
-
-    if( bottom > js){
-        $('.js').addClass('active');
-    }
-
-    if( bottom > php){
-        $('.php').addClass('active');
-    }
-
-    if( bottom > sql){
-        $('.sql').addClass('active');
-    }
-
-});
-
 $('.mobile-menu').click( function(){
     $('.mobile-menu').toggleClass('active');
     $('.mobile-menu-items').toggleClass('active');
@@ -96,4 +62,11 @@ $(window).scroll(function () {
     if( scroll == 0){
         $('.sticky-nav ul').css('background-color', 'rgba(255, 255, 255, 0.0)');
     }
+});
+
+let frameTop = $('.project__frame');
+
+
+frameTop.draggable({
+  addClasses: false
 });

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="style/typo.css">
     <link rel="stylesheet" href="style/hero-anim.css">
     <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="lib/jquery-ui.css">
 
 </head>
 <body>
@@ -44,68 +45,124 @@
         </ul>
     </div>
 
-    <header class="hero-image hero-projects"> 
-        <h1
-            data-sal="slide-up"
-            data-sal-delay="400"
-            data-sal-duration="1000"
-            data-sal-easing="ease-out-back">
-            Projekty
-        </h1>
-        <div class="hero-anim-shape shape-1"></div>
-        <div class="hero-anim-shape shape-2"></div>
-        <div class="hero-anim-shape shape-3"></div>
-        <div class="hero-anim-shape shape-4"></div>
-    </header>
-
-    <div class="wrapper">
-        <div class="projects">
-
-            <div class="project"
-                data-sal="slide-right"
-                data-sal-once="true"
-                data-sal-delay="0"
-                data-sal-duration="700"
+    <div class="no-overflow">
+        <header class="hero-image hero-projects"> 
+            <h1
+                data-sal="slide-up"
+                data-sal-delay="400"
+                data-sal-duration="1000"
                 data-sal-easing="ease-out-back">
-                <div class="project__text-wrap">
-                    <h3 class="project__name">Nazwa Projektu</h3>
-                    <p class="project__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque temporibus deserunt inventore eius totam ratione non placeat quasi delectus laudantium aspernatur, ea molestiae exercitationem ut tenetur maiores eligendi facere!</p>
+                Projekty
+            </h1>
+            <div class="hero-anim-shape shape-1"></div>
+            <div class="hero-anim-shape shape-2"></div>
+            <div class="hero-anim-shape shape-3"></div>
+            <div class="hero-anim-shape shape-4"></div>
+        </header>
+
+        
+        <div class="wrapper">
+            <div class="projects">
+
+                <div class="project">
+                    <div class="project__text-wrap">
+                        <h3 class="project__name"
+                            data-sal="slide-up"
+                            data-sal-once="true"
+                            data-sal-delay="0"
+                            data-sal-duration="700"
+                            data-sal-easing="ease-out-back">   
+                            Nazwa Projektu
+                        </h3>
+                        <p class="project__caption"
+                            data-sal="slide-up"
+                            data-sal-once="true"
+                            data-sal-delay="0"
+                            data-sal-duration="700"
+                            data-sal-easing="ease-out-back">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque temporibus deserunt inventore eius totam ratione non placeat quasi delectus laudantium aspernatur, ea molestiae exercitationem ut tenetur maiores eligendi facere!
+                        </p>
+                    </div>
+                    <div class="project__frame"
+                        data-sal="slide-up"
+                        data-sal-once="true"
+                        data-sal-delay="0"
+                        data-sal-duration="700"
+                        data-sal-easing="ease-out-back">
+                        <img class="project__image" src="img/project1.jpg" alt="">
+                        <span class="frame__top"></span>
+                        <span class="frame__buttons"></span>
+                        <span class="frame__hover"></span>
+                    </div>
                 </div>
-                <img class="project__image" src="img/project1.jpg" alt="">
-            </div>
 
-            <div class="project"
-                data-sal="slide-right"
-                data-sal-once="true"
-                data-sal-delay="0"
-                data-sal-duration="700"
-                data-sal-easing="ease-out-back">
-                <img class="project__image" src="img/project1.jpg" alt="">
-                <div class="project__text-wrap">
-                    <h3 class="project__name">Nazwa Projektu</h3>
-                    <p class="project__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque temporibus deserunt inventore eius totam ratione non placeat quasi delectus laudantium aspernatur, ea molestiae exercitationem ut tenetur maiores eligendi facere!</p>
+                <div class="project">
+                    <div class="project__frame"
+                        data-sal="slide-up"
+                        data-sal-once="true"
+                        data-sal-delay="0"
+                        data-sal-duration="700"
+                        data-sal-easing="ease-out-back">
+                        <img class="project__image" src="img/project1.jpg" alt="">
+                        <span class="frame__top"></span>
+                        <span class="frame__buttons"></span>
+                        <span class="frame__hover"></span>
+                    </div>
+                    <div class="project__text-wrap">
+                        <h3 class="project__name"
+                            data-sal="slide-up"
+                            data-sal-once="true"
+                            data-sal-delay="0"
+                            data-sal-duration="700"
+                            data-sal-easing="ease-out-back">   
+                            Nazwa Projektu
+                        </h3>
+                        <p class="project__caption"
+                            data-sal="slide-up"
+                            data-sal-once="true"
+                            data-sal-delay="0"
+                            data-sal-duration="700"
+                            data-sal-easing="ease-out-back">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque temporibus deserunt inventore eius totam ratione non placeat quasi delectus laudantium aspernatur, ea molestiae exercitationem ut tenetur maiores eligendi facere!
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project"
-                data-sal="slide-right"
-                data-sal-once="true"
-                data-sal-delay="0"
-                data-sal-duration="700"
-                data-sal-easing="ease-out-back">
-                <div class="project__text-wrap">
-                    <h3 class="project__name">Nazwa Projektu</h3>
-                    <p class="project__caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque temporibus deserunt inventore eius totam ratione non placeat quasi delectus laudantium aspernatur, ea molestiae exercitationem ut tenetur maiores eligendi facere!</p>
+                <div class="project">
+                    <div class="project__text-wrap">
+                        <h3 class="project__name"
+                            data-sal="slide-up"
+                            data-sal-once="true"
+                            data-sal-delay="0"
+                            data-sal-duration="700"
+                            data-sal-easing="ease-out-back">   
+                            Nazwa Projektu
+                        </h3>
+                        <p class="project__caption"
+                            data-sal="slide-up"
+                            data-sal-once="true"
+                            data-sal-delay="0"
+                            data-sal-duration="700"
+                            data-sal-easing="ease-out-back">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque temporibus deserunt inventore eius totam ratione non placeat quasi delectus laudantium aspernatur, ea molestiae exercitationem ut tenetur maiores eligendi facere!
+                        </p>
+                    </div>
+                    <div class="project__frame"
+                        data-sal="slide-up"
+                        data-sal-once="true"
+                        data-sal-delay="0"
+                        data-sal-duration="700"
+                        data-sal-easing="ease-out-back">
+                        <img class="project__image" src="img/project1.jpg" alt="">
+                        <span class="frame__top"></span>
+                        <span class="frame__buttons"></span>
+                        <span class="frame__hover"></span>
+                    </div>
                 </div>
-                <img class="project__image" src="img/project1.jpg" alt="">
+
             </div>
-
-
-
-
         </div>
-
-
+        
     </div>
    
 
@@ -117,6 +174,8 @@
 
 
     <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <script src="lib/jquery-ui-touch-ounch.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="lib/sal.js"></script>
     <script src="js/index.js"></script>
