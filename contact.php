@@ -55,7 +55,47 @@
         <div class="hero-anim-shape shape-2"></div>
         <div class="hero-anim-shape shape-3"></div>
         <div class="hero-anim-shape shape-4"></div>
+        <div class="hero-anim-shape shape-5"></div>
     </header>
+
+        <?php
+            if(isset($_POST['submit'])){
+                $to      = 'przemek.cwiertka@gmail.com';
+                $subject = $_POST['subject'];
+                $message = $_POST['message'];
+                $headers = "MIME-Version: 1.0" . "\r\n";
+                $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+                $headers .= "From: kaihatsu@gmail.com" . "\r\n" .
+                "Reply-To: kaihatsu@gmail.com" . "\r\n" .
+                "X-Mailer: PHP/" . phpversion();
+
+            mail($to, $subject, $message, $headers);
+            }
+        ?>
+
+        <form action="" method="post">
+            Imię: <input type="text" name="first_name"><br>
+            Nazwisko: <input type="text" name="last_name"><br>
+            Tytuł: <input type="text" name="subject"><br>
+            Mail: <input type="text" name="email"><br>
+            Wiadomoś:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+            <input type="submit" name="submit" value="Wyślij">
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    
 
